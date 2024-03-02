@@ -1,0 +1,215 @@
+// Building a Calculator in Java
+ package TechnoHacks;
+ import java.util.Arrays;
+ import java.util.Scanner;
+ class Clc {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter no of inputs : (1-5)");
+    int inputs = sc.nextInt();
+    
+// For 1 Input Case <>
+
+    if(inputs==1) {
+      System.out.println("Enter The 1st No :");
+      double ip1 = sc.nextDouble();
+
+      System.out.println("Choose an Operation : [Square(S),Qube(Q),SQ Root(R)]");
+      char Opr = sc.next().charAt(0);
+      
+      double result;
+      switch(Opr) {
+        case 'S' : 
+           result = ip1*ip1;
+           System.out.printf("Square of %2f is = %.2f", ip1,(ip1*ip1));
+           break;
+        case 'Q' :
+           result = ip1*ip1*ip1;
+           System.out.printf("Qube of %2f is = %.2f", ip1,(ip1*ip1*ip1));
+           break;
+        case 'R' :
+           result = Math.sqrt(ip1);
+           System.out.println("Square root of " + ip1 + " is: " + result);
+           break;
+        default :
+           System.err.println("Error: Invalid Operation");
+      }
+
+    }
+
+// For 2 Input Case <>
+
+     if(inputs==2) {
+      System.out.println("Enter The 1st No :");
+      double ip1 = sc.nextDouble();
+
+      System.out.println("Enter The 2nd No :");
+      double ip2 = sc.nextDouble();
+
+      System.out.println("Choose an Operation : (+,-,*,/)");
+      char Opr = sc.next().charAt(0);
+
+      double result;
+      switch(Opr) {
+          case '+' : 
+             result = ip1+ip2;
+             System.out.printf("Addition = %.2f",result);
+             break;
+          case '-' :
+             result = ip1-ip2;
+             System.out.printf("Subtraction = %.2f", result);
+             break;
+          case '*' :
+             result = ip1*ip2;
+             System.out.printf("Multiplication = %.2f", result);
+             break;
+          case '/' :
+             result = ip1/ip2;
+             System.out.printf("Division = %.2f", result);
+             break;
+          default :
+             System.err.println("Error: Invalid Operation");
+        }
+        
+      }
+
+// For 3 Input Case <>
+
+    if(inputs==3) {
+      System.out.println("Enter The 1st No :");
+      double ip1 = sc.nextDouble();
+
+      System.out.println("Enter The 2nd No :");
+      double ip2 = sc.nextDouble();
+
+      System.out.println("Enter The 3nd No :");
+      double ip3 = sc.nextDouble();
+
+      System.out.println("Choose an Operation : (+,-,*,/)");
+      char Opr = sc.next().charAt(0);
+
+      double result;
+      switch(Opr) {
+          case '+' : 
+             result = ip1+ip2+ip3;
+             System.out.printf("Addition = %.2f",result);
+             break;
+          case '-' :
+             result = ip1-ip2-ip3;
+             System.out.printf("Subtraction = %.2f", result);
+             break;
+          case '*' :
+             result = ip1*ip2*ip3;
+             System.out.printf("Multiplication = %.2f", result);
+             break;
+          case '/' :
+             result = ip1/ip2/ip3;
+             System.out.printf("Division = %.2f", result);
+             break;
+          default :
+             System.out.println("Error: Invalid Operation");
+             
+          
+        }
+      }
+
+
+// For 4 Input Case <>
+
+    if(inputs==4) {
+      System.out.println("Enter The 1st No :");
+      double ip1 = sc.nextDouble();
+
+      System.out.println("Enter The 2nd No :");
+      double ip2 = sc.nextDouble();
+
+      System.out.println("Enter The 3nd No :");
+      double ip3 = sc.nextDouble();
+
+      System.out.println("Enter The 4th No :");
+      double ip4 = sc.nextDouble();
+
+      System.out.println("Choose an Operation : (+,-,*,/)");
+      char Opr = sc.next().charAt(0);
+
+      double result;
+      switch(Opr) {
+        case '+' : 
+           result = ip1+ip2+ip3+ip4;
+           System.out.printf("Addition = %.2f",result);
+           break;
+        case '-' :
+           result = ip1-ip2-ip3-ip4;
+           System.out.printf("Subtraction = %.2f", result);
+           break;
+        case '*' :
+           result = ip1*ip2*ip3*ip4;
+           System.out.printf("Multiplication = %.2f", result);
+           break;
+        case '/' :
+           result = ip1/ip2/ip3/ip4;
+           System.out.printf("Division = %.2f", result);
+           break;
+        default :
+           System.out.println("Error: Invalid Operation");
+      }
+      
+    }
+
+// For 5 Input Case <>
+
+    if(inputs==5) {
+      System.out.println("Enter The 1st No :");
+      double ip1 = sc.nextDouble();
+
+      System.out.println("Enter The 2nd No :");
+      double ip2 = sc.nextDouble();
+
+      System.out.println("Enter The 3nd No :");
+      double ip3 = sc.nextDouble();
+
+      System.out.println("Enter The 4th No :");
+      double ip4 = sc.nextDouble();
+
+      System.out.println("Enter The 5th No :");
+      double ip5 = sc.nextDouble();
+
+      System.out.println("Choose an Operation : (+,-,*,/)");
+      char Opr = sc.next().charAt(0);
+
+
+      double result;
+      switch(Opr) {
+        case '+' : 
+           result = ip1+ip2+ip3+ip4+ip5;
+           System.out.printf("Addition = %.2f",result);
+           break;
+        case '-' :
+           result = ip1-ip2-ip3-ip4-ip5;
+           System.out.printf("Subtraction = %.2f", result);
+           break;
+        case '*' :
+           result = ip1*ip2*ip3*ip4*ip5;
+           System.out.printf("Multiplication = %.2f", result);
+           break;
+        case '/' :
+           result = ip1/ip2/ip3/ip4/ip5;
+           System.out.printf("Division = %.2f", result);
+           break;
+        default :
+           System.out.println("Error: Invalid Operation");
+      }
+      
+    }
+
+    
+
+    
+    
+  
+  }  
+}
+
+     
+    
+
